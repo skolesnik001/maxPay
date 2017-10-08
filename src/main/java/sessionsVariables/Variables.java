@@ -13,4 +13,7 @@ public class Variables {
     public static final String PASS_INVALID_1 = "321";
     public static final String PASS_INVALID_2 = "!!!!!!!!!!!!!!!!!!!!!";
     public static final String PASS_INVALID_3 = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@";
+
+
 }
+

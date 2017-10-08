@@ -3,9 +3,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-/**
- * Created by siava on 08.10.2017.
- */
 public class LoginPage extends BasePage {
 
 
