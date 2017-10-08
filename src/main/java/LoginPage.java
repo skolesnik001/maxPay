@@ -30,6 +30,7 @@ public class LoginPage extends BasePage {
     private WebElement errorMessage;
 
 
+
     public void loginUser(String email, String password){
         emailField.click();
         emailField.sendKeys(email);
