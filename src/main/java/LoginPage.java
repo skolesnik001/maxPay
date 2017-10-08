@@ -22,6 +22,14 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = ".//*[@id='login-password']")
     private WebElement passwordField;
 
+    public WebElement getErrorMessage() {
+        return errorMessage;
+    }
+
+    @FindBy(css = ".alert.alert-danger.alert-dismissable.push-15")
+    private WebElement errorMessage;
+
+
     public void loginUser(String email, String password){
         emailField.click();
         emailField.sendKeys(email);

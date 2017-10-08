@@ -7,10 +7,6 @@ import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by siava on 08.10.2017.
- */
-
 public class Initialization {
 
     private static final String URL_ROZETKA = "https://my-sandbox.maxpay.com/#/signin";

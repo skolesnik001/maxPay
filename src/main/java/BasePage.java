@@ -29,5 +29,18 @@ public class BasePage {
         Assert.assertEquals(driver.getTitle(), pageTitle);
     }
 
+    public boolean assertForAll(String expectedError, WebElement element) {
+        waitElement(element, 5);
+        String errorFieldText = element.getText();
+        if (!errorFieldText.contains(expectedError)) {
+            String errorMessage = String.format(
+                    "Expected result: %s , not found. Actual error field value: %s",
+                    expectedError,
+                    errorFieldText);
+            throw new AssertionError(errorMessage);
+        }
+        return false;
+    }
+
 
 }
